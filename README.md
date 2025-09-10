@@ -1,4 +1,4 @@
-# LowLight-Image-Enhancing-UNetGAN
+# Low Light Image-Enhancing U-NetGAN
 This repo contains the files necessary in order to run the project's U-Net GAN. The results, analysis, and 
 generation examples are included in the project report, included as a .pdf file. Further analysis can be run 
 sing the `utils` library which includes all the metrics used in the report.
