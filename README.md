@@ -20,7 +20,7 @@ All necessary packages are noted in `requirements.txt`. Running the full model o
 It is recommended to have access to a GPU to recreate the experiments.
 
 # Dataset Preprocessing
-The model requires the SID Dataset from  "Learning to See in the Dark" (Chen et al., 2018). 
+The model requires the [SID Dataset](https://cchen156.github.io/SID.html) from  "Learning to See in the Dark" (Chen et al., 2018). 
 Included is a preprocessing script to convert the raw .ARW images into .png images. This can be ran on the terminal 
 with `python preprocess.py`. A file called preprocess.yaml is used for the location of the raw dataset and the processed dataset, 
 which need to be filled in with the respective folders.
