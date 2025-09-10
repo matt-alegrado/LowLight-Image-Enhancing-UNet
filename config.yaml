@@ -1,0 +1,43 @@
+generator:
+  hidden_dims: [64, 128, 256, 512, 1024]
+  input_image_size: 256
+  lr: 1e-3
+  weight_decay: 1e-5
+  dropout_rate: 0.2
+  dropout_layers: 3
+  use_groupnorm: True
+discriminator:
+  hidden_dims: [64, 128, 256, 512]
+  dropout_start: 2
+  dropout_p: 0.3
+  lr: 2e-4
+  weight_decay: 5e-5
+  use_groupnorm: True
+gan:
+  recon_weight: 0.5
+  adv_weight: 0.15
+  perc_weight: 0
+  ssim_weight: 0.35
+  warmup_epochs: 0
+  disc_cooldown: 1
+student:
+  hidden_dims: [32, 64, 128, 256]
+  input_image_size: 128
+  lr: 1e-3
+  weight_decay: 1e-5
+  dropout_rate: 0.1
+  dropout_layers: 2
+  use_groupnorm: True
+dataset:
+    data_path: "E:/Datasets/SIDDataset/"
+    batch_size: 8
+    num_workers: 4
+trainer:
+    max_epochs: 50
+    gpus: [0]
+logging:
+    save_dir: "logs/"
+    name: "UNetGAN"
+experiment:
+    step_size: 1
+    manual_seed: 228
